@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>중국어 단어장</title>
+  <style>
+    /* STSong 폰트 설정 */
+    @font-face {
+      font-family: 'STSong';
+      src: url('./assets/fonts/STSONG.TTF') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .hanzi {
+      font-family: 'STSong', serif;
+      font-size: 1.15rem;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f4f5f7;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* 앱 컨테이너 */
+    #app {
+      width: 100%;
+      max-width: 440px;
+      background: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 상단 헤더 */
+    header {
+      background-color: #333333;
+      color: #ffffff;
+      text-align: center;
+      padding: 18px 20px;
+      font-size: 1.15rem;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+
+    /* 메인 콘텐츠 영역 */
+    .content {
+      padding: 20px 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 페이지 공통 */
+    .page {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .page.active {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    /* 메인 메뉴 수직 중앙 정렬 */
+    #main-page.active {
+      justify-content: center;
+    }
+
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .menu-card {
+      width: 100%;
+      padding: 24px 20px;
+      border: none;
+      border-radius: 12px;
+      color: #ffffff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .menu-card:active {
+      transform: translateY(2px);
+    }
+
+    .card-orange { background: linear-gradient(135deg, #f7a072, #ed8952); }
+    .card-blue { background: linear-gradient(135deg, #64a6bd, #4a8fa8); }
+    .card-green { background: linear-gradient(135deg, #4f772d, #3a5a1f); }
+
+    /* 서브 페이지 상단 헤더 */
+    .sub-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .sub-header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      background: #f0f0f0;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .sub-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+
+    /* 필터 및 액션 바 스타일 */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .filter-btn-level { background-color: #f7a072; color: white; }
+    .filter-btn-pos { background-color: #4f772d; color: white; }
+
+    .action-btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.82rem;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    .btn-add-selected { background-color: #3b82f6; color: white; }
+    .btn-delete-selected { background-color: #ef4444; color: white; }
+
+    .filter-panel {
+      display: none;
+      background: #fdfdfd;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .filter-panel.open { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .filter-panel-scroll {
+      display: none;
+      overflow-x: auto;
+      white-space: nowrap;
+      background: #fdfdfd;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .filter-panel-scroll.open { display: flex; }
+
+    .checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.88rem;
+      cursor: pointer;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    .all-label {
+      font-weight: bold;
+      color: #333;
+      padding-right: 6px;
+      border-right: 1px solid #ddd;
+    }
+
+    /* 단어장 테이블 */
+    .table-container {
+      flex: 1;
+      overflow-x: auto;
+      overflow-y: auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      max-height: calc(100vh - 220px);
+    }
+
+    table {
+      width: 100%;
+      min-width: 580px;
+      border-collapse: collapse;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    thead {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      z-index: 10;
+    }
+
+    th, td {
+      padding: 8px 4px;
+      border-bottom: 1px solid #eef2f5;
+      word-break: keep-all;
+      vertical-align: middle;
+    }
+
+    tbody tr:nth-child(even) { background-color: #fafafa; }
+
+    .count-info {
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 6px;
+      text-align: right;
+    }
+
+    .btn-del-sm {
+      background: #fee2e2;
+      color: #ef4444;
+      border: 1px solid #fca5a5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* B. 단어 퀴즈 설정 페이지 */
+    .quiz-setting-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-top: 8px;
+    }
+
+    .setting-section {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .type-group { display: flex; gap: 10px; }
+
+    .btn-option {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      background-color: #f8fafc;
+      color: #94a3b8;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-option.active {
+      background-color: #ffffff;
+      color: #1e293b;
+      border: 2px solid #333333;
+      font-weight: 700;
+    }
+
+    .range-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .range-item {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 12px;
+      transition: all 0.2s ease;
+      background-color: #fafafa;
+    }
+
+    .range-item.active { background-color: #ffffff; border-color: #333; }
+
+    .range-header { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+    .range-header input[type="radio"] { accent-color: #333; width: 16px; height: 16px; cursor: pointer; }
+
+    .range-title { font-size: 0.9rem; color: #94a3b8; font-weight: 500; }
+    .range-item.active .range-title { color: #1e293b; font-weight: 700; }
+
+    .sub-checkbox-box {
+      margin-top: 10px;
+      padding-top: 8px;
+      padding-left: 24px;
+      border-top: 1px dashed #e2e8f0;
+      display: none;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .sub-checkbox-scroll {
+      margin-top: 10px;
+      padding-top: 8px;
+      padding-left: 24px;
+      border-top: 1px dashed #e2e8f0;
+      display: none;
+      overflow-x: auto;
+      white-space: nowrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .range-item.active .sub-checkbox-box,
+    .range-item.active .sub-checkbox-scroll { display: flex; }
+
+    .count-setting { display: flex; flex-direction: column; gap: 10px; }
+    .count-quick-btns { display: flex; gap: 8px; }
+
+    .btn-count {
+      flex: 1;
+      padding: 8px 0;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      color: #94a3b8;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-count.active { background: #333; color: #fff; border-color: #333; }
+
+    .count-input-wrapper { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+    .count-input-wrapper input {
+      width: 80px;
+      padding: 8px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .start-quiz-btn {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, #64a6bd, #4a8fa8);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(100, 166, 189, 0.3);
+      margin-top: 10px;
+      transition: transform 0.15s ease;
+    }
+
+    .start-quiz-btn:active { transform: translateY(2px); }
+
+    /* C. 퀴즈 진행 화면 */
+    .accuracy-text { font-size: 0.9rem; font-weight: bold; color: #4a8fa8; }
+
+    .quiz-question-box {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+    }
+
+    .question-main { font-size: 2.2rem; font-weight: bold; color: #1e293b; margin-bottom: 6px; }
+    .question-sub { font-size: 1rem; color: #64748b; }
+
+    .options-grid { display: flex; flex-direction: column; gap: 12px; }
+
+    .option-btn {
+      width: 100%;
+      padding: 16px 20px;
+      border: 1.5px solid #cbd5e1;
+      background-color: #ffffff;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #334155;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+    }
+
+    .option-btn:hover { background-color: #f1f5f9; }
+
+    .option-btn.correct {
+      background-color: #dcfce7 !important;
+      border-color: #22c55e !important;
+      color: #15803d !important;
+      font-weight: 700;
+    }
+
+    .option-btn.wrong {
+      background-color: #fee2e2 !important;
+      border-color: #ef4444 !important;
+      color: #b91c1c !important;
+      font-weight: 700;
+    }
+
+    /* D. 퀴즈 결과 화면 */
+    .result-summary-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .result-score { font-size: 2rem; font-weight: 800; color: #333; margin-bottom: 8px; }
+    .result-detail { font-size: 0.95rem; color: #64748b; }
+
+    .add-myword-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #84cc16;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(132, 204, 22, 0.25);
+    }
+
+    .wrong-list-title { font-size: 1rem; font-weight: 700; margin-bottom: 10px; color: #1e293b; }
+
+    .wrong-word-list {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 220px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 8px 12px;
+      background: #fafafa;
+      margin-bottom: 20px;
+    }
+
+    .wrong-word-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 0.9rem;
+    }
+
+    .wrong-word-item:last-child { border-bottom: none; }
+
+    .bottom-nav { display: flex; gap: 10px; margin-top: auto; padding-top: 10px; }
+
+    .nav-btn {
+      flex: 1;
+      padding: 12px 0;
+      border: none;
+      border-radius: 8px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <header id="main-header">중국어 단어장</header>
+
+  <div class="content">
+
+    <!-- 1. 메인 메뉴 화면 -->
+    <div id="main-page" class="page active">
+      <div class="menu-list">
+        <button class="menu-card card-orange" onclick="showPage('wordlist-page')">
+          <span>A. 단어장 확인</span>
+          <span>➔</span>
+        </button>
+        <button class="menu-card card-blue" onclick="showPage('quiz-page')">
+          <span>B. 단어 퀴즈</span>
+          <span>➔</span>
+        </button>
+        <button class="menu-card card-green" onclick="showPage('myword-page')">
+          <span>C. 개인 단어장 확인</span>
+          <span>➔</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. A. 단어장 확인 페이지 -->
+    <div id="wordlist-page" class="page">
+      <div class="sub-header">
+        <div class="sub-header-left">
+          <button class="back-btn" onclick="showPage('main-page')">← 뒤로</button>
+          <span class="sub-title">A. 단어장 확인</span>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn filter-btn-level" onclick="toggleFilterPanel('level-panel')">급수 ▾</button>
+        <button class="filter-btn filter-btn-pos" onclick="toggleFilterPanel('pos-panel')">품사 ▾</button>
+        <button class="action-btn btn-add-selected" onclick="addSelectedToMyWords()">+ 선택 단어 추가</button>
+      </div>
+
+      <div id="level-panel" class="filter-panel">
+        <label class="checkbox-label"><input type="checkbox" value="4급" checked onchange="applyFilters()"> 4급</label>
+        <label class="checkbox-label"><input type="checkbox" value="5급" checked onchange="applyFilters()"> 5급</label>
+        <label class="checkbox-label"><input type="checkbox" value="6급" checked onchange="applyFilters()"> 6급</label>
+      </div>
+
+      <div id="pos-panel" class="filter-panel-scroll"></div>
+
+      <div id="word-count" class="count-info">불러오는 중...</div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 8%;"><input type="checkbox" id="check-all-allwords" onchange="toggleCheckAllAllWords(this)"></th>
+              <th style="width: 10%;">급수</th>
+              <th style="width: 15%;">한자</th>
+              <th style="width: 15%;">병음</th>
+              <th style="width: 42%;">뜻</th>
+              <th style="width: 10%;">품사</th>
+            </tr>
+          </thead>
+          <tbody id="word-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3. B. 단어 퀴즈 설정 페이지 -->
+    <div id="quiz-page" class="page">
+      <div class="sub-header">
+        <div class="sub-header-left">
+          <button class="back-btn" onclick="showPage('main-page')">← 뒤로</button>
+          <span class="sub-title">B. 단어 퀴즈 설정</span>
+        </div>
+      </div>
+
+      <div class="quiz-setting-container">
+        <div class="setting-section">
+          <div class="section-title">1. 퀴즈 유형 선택</div>
+          <div class="type-group">
+            <button class="btn-option active" id="type-meaning" onclick="selectQuizType('meaning')">뜻 퀴즈<br><small style="font-size:0.75rem; font-weight:normal;">(한자 ➔ 뜻)</small></button>
+            <button class="btn-option" id="type-hanzi" onclick="selectQuizType('hanzi')">한자 퀴즈<br><small style="font-size:0.75rem; font-weight:normal;">(뜻 ➔ 한자)</small></button>
+          </div>
+        </div>
+
+        <div class="setting-section">
+          <div class="section-title">2. 출제 범위 선택</div>
+          <div class="range-list">
+            <div class="range-item active" id="range-item-all" onclick="selectQuizRange('all')">
+              <label class="range-header">
+                <input type="radio" name="quiz-range" value="all" checked>
+                <span class="range-title">모든 단어</span>
+              </label>
+            </div>
+
+            <div class="range-item" id="range-item-level" onclick="selectQuizRange('level')">
+              <label class="range-header">
+                <input type="radio" name="quiz-range" value="level">
+                <span class="range-title">특정 급수 단어만</span>
+              </label>
+              <div class="sub-checkbox-box">
+                <label class="checkbox-label"><input type="checkbox" class="quiz-level-cb" value="4급" checked> 4급</label>
+                <label class="checkbox-label"><input type="checkbox" class="quiz-level-cb" value="5급" checked> 5급</label>
+                <label class="checkbox-label"><input type="checkbox" class="quiz-level-cb" value="6급" checked> 6급</label>
+              </div>
+            </div>
+
+            <div class="range-item" id="range-item-pos" onclick="selectQuizRange('pos')">
+              <label class="range-header">
+                <input type="radio" name="quiz-range" value="pos">
+                <span class="range-title">특정 품사 단어만</span>
+              </label>
+              <div class="sub-checkbox-scroll" id="quiz-pos-checkbox-container"></div>
+            </div>
+
+            <div class="range-item" id="range-item-my" onclick="selectQuizRange('my')">
+              <label class="range-header">
+                <input type="radio" name="quiz-range" value="my">
+                <span class="range-title">개인 단어장 단어만</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="setting-section">
+          <div class="section-title">3. 총 문제 수</div>
+          <div class="count-setting">
+            <div class="count-quick-btns">
+              <button class="btn-count" onclick="setQuestionCount(5)">5개</button>
+              <button class="btn-count active" onclick="setQuestionCount(10)">10개</button>
+              <button class="btn-count" onclick="setQuestionCount(20)">20개</button>
+              <button class="btn-count" onclick="setQuestionCount(30)">30개</button>
+            </div>
+            <div class="count-input-wrapper">
+              <input type="number" id="quiz-count-input" value="10" min="1" max="100">
+              <span style="font-size:0.9rem; font-weight:bold;">개</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="start-quiz-btn" onclick="startQuiz()">시험보러 가기 ➔</button>
+      </div>
+    </div>
+
+    <!-- 4. 퀴즈 진행 화면 -->
+    <div id="quiz-play-page" class="page">
+      <div class="sub-header">
+        <div class="sub-header-left">
+          <button class="back-btn" onclick="stopQuizAndShowResult()">✕ 중단</button>
+          <span class="sub-title" id="quiz-progress-text">1 / 10</span>
+        </div>
+        <div class="accuracy-text" id="quiz-accuracy-text">정답률 0%</div>
+      </div>
+
+      <div class="quiz-question-box">
+        <div class="question-main hanzi" id="quiz-question-title">-</div>
+        <div class="question-sub" id="quiz-question-sub"></div>
+      </div>
+
+      <div class="options-grid" id="quiz-options-container"></div>
+    </div>
+
+    <!-- 5. 퀴즈 결과 화면 -->
+    <div id="quiz-result-page" class="page">
+      <div class="sub-header">
+        <span class="sub-title">퀴즈 결과</span>
+      </div>
+
+      <div class="result-summary-card">
+        <div class="result-score" id="result-score-text">0점</div>
+        <div class="result-detail" id="result-detail-text">총 0문제 중 0개 정답</div>
+      </div>
+
+      <button class="add-myword-btn" onclick="addWrongWordsToMyList()">개인 단어장에 오답 등록</button>
+
+      <div class="wrong-list-title">오답 단어 목록</div>
+      <div class="wrong-word-list" id="wrong-word-list-container"></div>
+
+      <div class="bottom-nav">
+        <button class="nav-btn card-orange" onclick="showPage('wordlist-page')">A. 단어장</button>
+        <button class="nav-btn card-blue" onclick="showPage('quiz-page')">B. 단어 퀴즈</button>
+        <button class="nav-btn card-green" onclick="showPage('myword-page')">C. 개인 단어장</button>
+      </div>
+    </div>
+
+    <!-- 6. C. 개인 단어장 페이지 (이미지 스타일 반영) -->
+    <div id="myword-page" class="page">
+      <div class="sub-header">
+        <div class="sub-header-left">
+          <button class="back-btn" onclick="showPage('main-page')">← 뒤로</button>
+          <span class="sub-title">C. 개인 단어장 확인</span>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn filter-btn-level" onclick="toggleFilterPanel('my-level-panel')">급수 ▾</button>
+        <button class="filter-btn filter-btn-pos" onclick="toggleFilterPanel('my-pos-panel')">품사 ▾</button>
+        <button class="action-btn btn-delete-selected" onclick="deleteSelectedMyWords()">선택 삭제</button>
+      </div>
+
+      <div id="my-level-panel" class="filter-panel">
+        <label class="checkbox-label"><input type="checkbox" value="4급" checked onchange="applyMyWordFilters()"> 4급</label>
+        <label class="checkbox-label"><input type="checkbox" value="5급" checked onchange="applyMyWordFilters()"> 5급</label>
+        <label class="checkbox-label"><input type="checkbox" value="6급" checked onchange="applyMyWordFilters()"> 6급</label>
+      </div>
+
+      <div id="my-pos-panel" class="filter-panel-scroll"></div>
+
+      <div id="myword-count" class="count-info">등록된 단어: 0개</div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 8%;"><input type="checkbox" id="check-all-mywords" onchange="toggleCheckAllMyWords(this)"></th>
+              <th style="width: 10%;">급수</th>
+              <th style="width: 15%;">한자</th>
+              <th style="width: 15%;">병음</th>
+              <th style="width: 36%;">뜻</th>
+              <th style="width: 10%;">품사</th>
+              <th style="width: 6%;">삭제</th>
+            </tr>
+          </thead>
+          <tbody id="myword-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="words.js"></script>
+<script>
+  let rawWordsData = typeof hskWords !== 'undefined' ? hskWords : [];
+  let currentFilteredAllWords = []; // A. 단어장에서 현재 필터링된 단어 리스트
+  let selectedQuizType = 'meaning';
+  let selectedQuizRange = 'all';
+  let activeQuizPosList = [];
+
+  // 퀴즈 진행 상태 변수
+  let quizPool = [];
+  let quizQuestions = [];
+  let currentQuizIndex = 0;
+  let correctCount = 0;
+  let wrongWords = [];
+  let isAnswering = false;
+
+  // JS 파일 데이터 로드 및 초기화
+  window.addEventListener('DOMContentLoaded', () => {
+    if (rawWordsData.length > 0) {
+      initPosFilter(rawWordsData, 'pos-panel', 'pos-item-cb', 'pos-all-cb', applyFilters);
+      initPosFilter(rawWordsData, 'my-pos-panel', 'my-pos-item-cb', 'my-pos-all-cb', applyMyWordFilters);
+      initQuizPosCheckboxes(rawWordsData);
+      applyFilters();
+    } else {
+      document.getElementById('word-count').innerText = "데이터를 불러오지 못했습니다.";
+    }
+  });
+
+  /* --------------------------------------------- */
+  /* 공통 품사 필터 초기화 함수 */
+  /* --------------------------------------------- */
+  function initPosFilter(data, containerId, itemClass, allId, applyFunc) {
+    const posSet = new Set();
+    data.forEach(item => {
+      if (Array.isArray(item.pos)) {
+        item.pos.forEach(p => { if (p && p.trim()) posSet.add(p.trim()); });
+      }
+    });
+
+    const panel = document.getElementById(containerId);
+    panel.innerHTML = '';
+    
+    const allLabel = document.createElement('label');
+    allLabel.className = 'checkbox-label all-label';
+    allLabel.innerHTML = `<input type="checkbox" id="${allId}" checked> 전체`;
+    allLabel.querySelector('input').onchange = (e) => {
+      document.querySelectorAll(`.${itemClass}`).forEach(cb => cb.checked = e.target.checked);
+      applyFunc();
+    };
+    panel.appendChild(allLabel);
+
+    Array.from(posSet).sort().forEach(pos => {
+      const label = document.createElement('label');
+      label.className = 'checkbox-label';
+      label.innerHTML = `<input type="checkbox" class="${itemClass}" value="${pos}" checked> ${pos}`;
+      label.querySelector('input').onchange = () => {
+        const itemCbs = Array.from(document.querySelectorAll(`.${itemClass}`));
+        document.getElementById(allId).checked = itemCbs.every(cb => cb.checked);
+        applyFunc();
+      };
+      panel.appendChild(label);
+    });
+  }
+
+  function toggleFilterPanel(panelId) {
+    const target = document.getElementById(panelId);
+    const isOpen = target.classList.contains('open');
+    document.querySelectorAll('.filter-panel, .filter-panel-scroll').forEach(p => p.classList.remove('open'));
+    if (!isOpen) target.classList.add('open');
+  }
+
+  function getMeaningString(item) {
+    return item.meanings ? item.meanings.map(m => m.meaning).join(' / ') : (item.rawMeaning || '');
+  }
+
+  function getFilteredMeaningString(item) {
+    if (selectedQuizRange === 'pos' && activeQuizPosList.length > 0) {
+      if (item.meanings && Array.isArray(item.meanings)) {
+        const matched = item.meanings.filter(m => {
+          const pVal = m.pos || m.type || m.partOfSpeech;
+          return pVal && activeQuizPosList.includes(pVal.trim());
+        });
+        if (matched.length > 0) {
+          return matched.map(m => m.meaning).join(' / ');
+        }
+      }
+    }
+    return getMeaningString(item);
+  }
+
+  /* --------------------------------------------- */
+  /* A. 전체 단어장 로직 */
+  /* --------------------------------------------- */
+  function applyFilters() {
+    const checkedLevels = Array.from(document.querySelectorAll('#level-panel input:checked')).map(cb => cb.value);
+    const checkedPos = Array.from(document.querySelectorAll('.pos-item-cb:checked')).map(cb => cb.value);
+
+    currentFilteredAllWords = rawWordsData.filter(item => {
+      const isLevelMatch = checkedLevels.includes(item.level);
+      const isPosMatch = item.pos && item.pos.some(p => checkedPos.includes(p));
+      return isLevelMatch && isPosMatch;
+    });
+
+    renderTable(currentFilteredAllWords);
+  }
+
+  function renderTable(words) {
+    const tbody = document.getElementById('word-table-body');
+    const countInfo = document.getElementById('word-count');
+    tbody.innerHTML = '';
+    countInfo.innerText = `총 ${words.length.toLocaleString()}개 단어`;
+    document.getElementById('check-all-allwords').checked = false;
+
+    words.forEach(item => {
+      const tr = document.createElement('tr');
+      const posStr = Array.isArray(item.pos) ? item.pos.join(', ') : item.pos;
+
+      tr.innerHTML = `
+        <td><input type="checkbox" class="allwords-cb" value="${item.hanzi}"></td>
+        <td>${item.level}</td>
+        <td class="hanzi">${item.hanzi}</td>
+        <td>${item.pinyin}</td>
+        <td>${getMeaningString(item)}</td>
+        <td>${posStr}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function toggleCheckAllAllWords(masterCb) {
+    document.querySelectorAll('.allwords-cb').forEach(cb => cb.checked = masterCb.checked);
+  }
+
+  // A -> C: 선택한 단어 개인 단어장에 추가
+  function addSelectedToMyWords() {
+    const checkedCbs = Array.from(document.querySelectorAll('.allwords-cb:checked'));
+    if (checkedCbs.length === 0) {
+      alert('개인 단어장에 추가할 단어를 선택해 주세요.');
+      return;
+    }
+
+    const selectedHanzis = checkedCbs.map(cb => cb.value);
+    let myWords = JSON.parse(localStorage.getItem('myWords') || '[]');
+    let addedCount = 0;
+
+    selectedHanzis.forEach(hanzi => {
+      const targetObj = rawWordsData.find(w => w.hanzi === hanzi);
+      if (targetObj && !myWords.some(m => m.hanzi === hanzi)) {
+        myWords.push(targetObj);
+        addedCount++;
+      }
+    });
+
+    localStorage.setItem('myWords', JSON.stringify(myWords));
+    alert(`${addedCount}개 단어가 개인 단어장에 추가되었습니다.`);
+    
+    // 체크 해제
+    checkedCbs.forEach(cb => cb.checked = false);
+    document.getElementById('check-all-allwords').checked = false;
+  }
+
+  /* --------------------------------------------- */
+  /* B. 단어 퀴즈 설정 및 실행 로직 */
+  /* --------------------------------------------- */
+  function initQuizPosCheckboxes(data) {
+    const posSet = new Set();
+    data.forEach(item => {
+      if (Array.isArray(item.pos)) {
+        item.pos.forEach(p => { if (p && p.trim()) posSet.add(p.trim()); });
+      }
+    });
+
+    const quizPosContainer = document.getElementById('quiz-pos-checkbox-container');
+    quizPosContainer.innerHTML = '';
+
+    const allLabel = document.createElement('label');
+    allLabel.className = 'checkbox-label all-label';
+    allLabel.innerHTML = `<input type="checkbox" id="quiz-pos-all-cb" checked onchange="toggleAllQuizPos(this)"> 전체`;
+    quizPosContainer.appendChild(allLabel);
+
+    Array.from(posSet).sort().forEach(pos => {
+      const label = document.createElement('label');
+      label.className = 'checkbox-label';
+      label.innerHTML = `<input type="checkbox" class="quiz-pos-cb" value="${pos}" checked onchange="onSingleQuizPosChange()"> ${pos}`;
+      quizPosContainer.appendChild(label);
+    });
+  }
+
+  function toggleAllQuizPos(allCb) {
+    document.querySelectorAll('.quiz-pos-cb').forEach(cb => { cb.checked = allCb.checked; });
+  }
+
+  function onSingleQuizPosChange() {
+    const allCb = document.getElementById('quiz-pos-all-cb');
+    const itemCbs = Array.from(document.querySelectorAll('.quiz-pos-cb'));
+    allCb.checked = itemCbs.every(cb => cb.checked);
+  }
+
+  function selectQuizType(type) {
+    selectedQuizType = type;
+    document.getElementById('type-meaning').classList.remove('active');
+    document.getElementById('type-hanzi').classList.remove('active');
+    if (type === 'meaning') {
+      document.getElementById('type-meaning').classList.add('active');
+    } else {
+      document.getElementById('type-hanzi').classList.add('active');
+    }
+  }
+
+  function selectQuizRange(rangeKey) {
+    selectedQuizRange = rangeKey;
+    ['all', 'level', 'pos', 'my'].forEach(key => {
+      const itemEl = document.getElementById(`range-item-${key}`);
+      const radio = itemEl.querySelector('input[type="radio"]');
+      if (key === rangeKey) {
+        itemEl.classList.add('active');
+        radio.checked = true;
+      } else {
+        itemEl.classList.remove('active');
+        radio.checked = false;
+      }
+    });
+  }
+
+  function setQuestionCount(num) {
+    document.getElementById('quiz-count-input').value = num;
+    document.querySelectorAll('.btn-count').forEach(btn => {
+      btn.classList.toggle('active', parseInt(btn.innerText) === num);
+    });
+  }
+
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function startQuiz() {
+    const targetCount = parseInt(document.getElementById('quiz-count-input').value) || 10;
+    activeQuizPosList = [];
+    
+    if (selectedQuizRange === 'all') {
+      quizPool = [...rawWordsData];
+    } else if (selectedQuizRange === 'level') {
+      const checkedLevels = Array.from(document.querySelectorAll('.quiz-level-cb:checked')).map(cb => cb.value);
+      if (checkedLevels.length === 0) { alert('최소 하나 이상의 급수를 선택해 주세요.'); return; }
+      quizPool = rawWordsData.filter(item => checkedLevels.includes(item.level));
+    } else if (selectedQuizRange === 'pos') {
+      const checkedPos = Array.from(document.querySelectorAll('.quiz-pos-cb:checked')).map(cb => cb.value);
+      if (checkedPos.length === 0) { alert('최소 하나 이상의 품사를 선택해 주세요.'); return; }
+      activeQuizPosList = checkedPos;
+      quizPool = rawWordsData.filter(item => item.pos && item.pos.some(p => checkedPos.includes(p)));
+    } else if (selectedQuizRange === 'my') {
+      const myWords = JSON.parse(localStorage.getItem('myWords') || '[]');
+      quizPool = [...myWords];
+    }
+
+    if (quizPool.length < 4 || targetCount > quizPool.length) {
+      alert(`[문제 수 오류]\n선택하신 범위 내 시험 가능한 단어가 부족합니다.\n(현재 범위 단어 수: ${quizPool.length}개 / 요청 문제 수: ${targetCount}개)`);
+      return;
+    }
+
+    const shuffledPool = shuffleArray(quizPool);
+    quizQuestions = shuffledPool.slice(0, targetCount);
+
+    currentQuizIndex = 0;
+    correctCount = 0;
+    wrongWords = [];
+    isAnswering = false;
+
+    showPage('quiz-play-page');
+    renderQuizQuestion();
+  }
+
+  function renderQuizQuestion() {
+    isAnswering = false;
+    const currentQuestion = quizQuestions[currentQuizIndex];
+    const totalCount = quizQuestions.length;
+
+    document.getElementById('quiz-progress-text').innerText = `${currentQuizIndex + 1} / ${totalCount}`;
+    const currentAccuracy = currentQuizIndex === 0 ? 0 : Math.round((correctCount / currentQuizIndex) * 100);
+    document.getElementById('quiz-accuracy-text').innerText = `정답률 ${currentAccuracy}%`;
+
+    const titleEl = document.getElementById('quiz-question-title');
+    const subEl = document.getElementById('quiz-question-sub');
+
+    if (selectedQuizType === 'meaning') {
+      titleEl.innerText = currentQuestion.hanzi;
+      titleEl.className = "question-main hanzi";
+      subEl.innerText = "";
+    } else {
+      titleEl.innerText = getFilteredMeaningString(currentQuestion);
+      titleEl.className = "question-main";
+      titleEl.style.fontSize = "1.3rem";
+      subEl.innerText = "";
+    }
+
+    const otherWords = quizPool.filter(item => item.hanzi !== currentQuestion.hanzi);
+    const shuffledOthers = shuffleArray(otherWords).slice(0, 3);
+    const options = shuffleArray([currentQuestion, ...shuffledOthers]);
+
+    const optionsContainer = document.getElementById('quiz-options-container');
+    optionsContainer.innerHTML = '';
+
+    options.forEach((opt) => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+
+      if (selectedQuizType === 'meaning') {
+        btn.innerText = getFilteredMeaningString(opt);
+      } else {
+        btn.innerText = opt.hanzi;
+        btn.classList.add('hanzi');
+      }
+
+      btn.onclick = () => handleAnswerSelect(btn, opt, currentQuestion);
+      optionsContainer.appendChild(btn);
+    });
+  }
+
+  function handleAnswerSelect(selectedBtn, selectedOpt, correctOpt) {
+    if (isAnswering) return;
+    isAnswering = true;
+
+    const isCorrect = (selectedOpt.hanzi === correctOpt.hanzi);
+    const allBtns = document.querySelectorAll('#quiz-options-container .option-btn');
+
+    if (isCorrect) {
+      selectedBtn.classList.add('correct');
+      correctCount++;
+    } else {
+      selectedBtn.classList.add('wrong');
+      wrongWords.push(correctOpt);
+
+      allBtns.forEach(btn => {
+        const text = btn.innerText;
+        if ((selectedQuizType === 'meaning' && text === getFilteredMeaningString(correctOpt)) ||
+            (selectedQuizType === 'hanzi' && text === correctOpt.hanzi)) {
+          btn.classList.add('correct');
+        }
+      });
+    }
+
+    setTimeout(() => {
+      currentQuizIndex++;
+      if (currentQuizIndex < quizQuestions.length) {
+        renderQuizQuestion();
+      } else {
+        renderQuizResult();
+      }
+    }, 1000);
+  }
+
+  function stopQuizAndShowResult() {
+    renderQuizResult();
+  }
+
+  function renderQuizResult() {
+    const totalAttempted = currentQuizIndex;
+    const finalScore = totalAttempted === 0 ? 0 : Math.round((correctCount / totalAttempted) * 100);
+
+    document.getElementById('result-score-text').innerText = `${finalScore}점`;
+    document.getElementById('result-detail-text').innerText = `진행한 ${totalAttempted}문제 중 ${correctCount}개 정답`;
+
+    const wrongListContainer = document.getElementById('wrong-word-list-container');
+    wrongListContainer.innerHTML = '';
+
+    if (wrongWords.length === 0) {
+      wrongListContainer.innerHTML = '<div style="text-align:center; color:#888; padding:20px;">틀린 단어가 없습니다! 🎉</div>';
+    } else {
+      wrongWords.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'wrong-word-item';
+        div.innerHTML = `
+          <span><strong class="hanzi">${item.hanzi}</strong> [${item.pinyin}]</span>
+          <span style="color:#666;">${getMeaningString(item)}</span>
+        `;
+        wrongListContainer.appendChild(div);
+      });
+    }
+
+    showPage('quiz-result-page');
+  }
+
+  function addWrongWordsToMyList() {
+    if (wrongWords.length === 0) {
+      alert('등록할 오답 단어가 없습니다.');
+      return;
+    }
+
+    let myWords = JSON.parse(localStorage.getItem('myWords') || '[]');
+    let addedCount = 0;
+
+    wrongWords.forEach(w => {
+      if (!myWords.some(m => m.hanzi === w.hanzi)) {
+        myWords.push(w);
+        addedCount++;
+      }
+    });
+
+    localStorage.setItem('myWords', JSON.stringify(myWords));
+    alert(`총 ${addedCount}개의 오답 단어가 개인 단어장에 추가되었습니다.`);
+  }
+
+  /* --------------------------------------------- */
+  /* C. 개인 단어장 페이지 (수정사항 반영) */
+  /* --------------------------------------------- */
+  function applyMyWordFilters() {
+    const myWords = JSON.parse(localStorage.getItem('myWords') || '[]');
+    const checkedLevels = Array.from(document.querySelectorAll('#my-level-panel input:checked')).map(cb => cb.value);
+    const checkedPos = Array.from(document.querySelectorAll('.my-pos-item-cb:checked')).map(cb => cb.value);
+
+    const filtered = myWords.filter(item => {
+      const isLevelMatch = checkedLevels.includes(item.level);
+      const isPosMatch = item.pos && item.pos.some(p => checkedPos.includes(p));
+      return isLevelMatch && isPosMatch;
+    });
+
+    renderMyWordTable(filtered);
+  }
+
+  function renderMyWordTable(displayWords = null) {
+    const myWords = JSON.parse(localStorage.getItem('myWords') || '[]');
+    const targetWords = displayWords !== null ? displayWords : myWords;
+
+    const tbody = document.getElementById('myword-table-body');
+    const countInfo = document.getElementById('myword-count');
+
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    countInfo.innerText = `등록된 단어: ${targetWords.length}개 (전체 ${myWords.length}개)`;
+    document.getElementById('check-all-mywords').checked = false;
+
+    if (targetWords.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="7" style="padding:20px; color:#888;">단어가 없습니다.</td></tr>';
+      return;
+    }
+
+    targetWords.forEach(item => {
+      const tr = document.createElement('tr');
+      const posStr = Array.isArray(item.pos) ? item.pos.join(', ') : item.pos;
+
+      tr.innerHTML = `
+        <td><input type="checkbox" class="mywords-cb" value="${item.hanzi}"></td>
+        <td>${item.level}</td>
+        <td class="hanzi">${item.hanzi}</td>
+        <td>${item.pinyin}</td>
+        <td>${getMeaningString(item)}</td>
+        <td>${posStr}</td>
+        <td><button class="btn-del-sm" onclick="deleteSingleMyWord('${item.hanzi}')">삭제</button></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function toggleCheckAllMyWords(masterCb) {
+    document.querySelectorAll('.mywords-cb').forEach(cb => cb.checked = masterCb.checked);
+  }
+
+  // 개인 단어장 단일 삭제
+  function deleteSingleMyWord(hanzi) {
+    let myWords = JSON.parse(localStorage.getItem('myWords') || '[]');
+    myWords = myWords.filter(item => item.hanzi !== hanzi);
+    localStorage.setItem('myWords', JSON.stringify(myWords));
+    applyMyWordFilters();
+  }
+
+  // 개인 단어장 선택 삭제
+  function deleteSelectedMyWords() {
+    const checkedCbs = Array.from(document.querySelectorAll('.mywords-cb:checked'));
+    if (checkedCbs.length === 0) {
+      alert('삭제할 단어를 선택해 주세요.');
+      return;
+    }
+
+    if (!confirm(`선택한 ${checkedCbs.length}개 단어를 개인 단어장에서 삭제하시겠습니까?`)) {
+      return;
+    }
+
+    const selectedHanzis = checkedCbs.map(cb => cb.value);
+    let myWords = JSON.parse(localStorage.getItem('myWords') || '[]');
+    myWords = myWords.filter(item => !selectedHanzis.includes(item.hanzi));
+
+    localStorage.setItem('myWords', JSON.stringify(myWords));
+    applyMyWordFilters();
+  }
+
+  /* --------------------------------------------- */
+  /* 페이지 전환 함수 */
+  /* --------------------------------------------- */
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+
+    const targetPage = document.getElementById(pageId);
+    if (targetPage) {
+      targetPage.classList.add('active');
+    }
+
+    if (pageId === 'myword-page') {
+      applyMyWordFilters();
+    } else if (pageId === 'wordlist-page') {
+      applyFilters();
+    }
+  }
+</script>
+
+</body>
+</html>
