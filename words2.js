@@ -32319,5 +32319,2490 @@ const hskWords = [
         "meaning": "처음, 최초"
       }
     ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "名誉",
+    "pinyin": "míngyù",
+    "rawMeaning": "명예, 명성 / 명예의",
+    "pos": [
+      "명사",
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "명예, 명성"
+      },
+      {
+        "pos": "형용사",
+        "meaning": "명예의"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "威望",
+    "pinyin": "wēiwàng",
+    "rawMeaning": "명망, 명성과 인망",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "명망, 명성과 인망"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "信誉",
+    "pinyin": "xìnyù",
+    "rawMeaning": "위신, 명성",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "위신, 명성"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "爱戴",
+    "pinyin": "àidài",
+    "rawMeaning": "추대하다, 우러러 섬기다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "추대하다, 우러러 섬기다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "逝世",
+    "pinyin": "shìshì",
+    "rawMeaning": "서거하다, 세상을 떠나다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "서거하다, 세상을 떠나다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "致力",
+    "pinyin": "zhìlì",
+    "rawMeaning": "힘쓰다, 진력하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "힘쓰다, 진력하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "勤劳",
+    "pinyin": "qínláo",
+    "rawMeaning": "부지런하다, 근면하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "부지런하다, 근면하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "节制",
+    "pinyin": "jiézhì",
+    "rawMeaning": "절제하다, 지휘 통솔하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "절제하다, 지휘 통솔하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "忍耐",
+    "pinyin": "rěnnài",
+    "rawMeaning": "인내하다, 참다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "인내하다, 참다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "忍受",
+    "pinyin": "rěnshòu",
+    "rawMeaning": "견디다, 이겨 내다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "견디다, 이겨 내다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "上进",
+    "pinyin": "shàngjìn",
+    "rawMeaning": "진보하다, 향상하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "진보하다, 향상하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "急切",
+    "pinyin": "jíqiè",
+    "rawMeaning": "다급하다, 절박하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "다급하다, 절박하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "拼命",
+    "pinyin": "pīnmìng",
+    "rawMeaning": "필사적으로, 적극적으로 / 기를 쓰다, 목숨을 내던지다",
+    "pos": [
+      "부사",
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "부사",
+        "meaning": "필사적으로, 적극적으로"
+      },
+      {
+        "pos": "동사",
+        "meaning": "기를 쓰다, 목숨을 내던지다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "彩票",
+    "pinyin": "cǎipiào",
+    "rawMeaning": "복권",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "복권"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "窍门",
+    "pinyin": "qiàomén",
+    "rawMeaning": "요령, (문제를 해결할) 방법",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "요령, (문제를 해결할) 방법"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "杠杆",
+    "pinyin": "gànggǎn",
+    "rawMeaning": "지렛대, 지레",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "지렛대, 지레"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "着手",
+    "pinyin": "zhuóshǒu",
+    "rawMeaning": "손을 대다, 착수하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "손을 대다, 착수하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "做主",
+    "pinyin": "zuòzhǔ",
+    "rawMeaning": "주인이 되다, 책임지고 결정하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "주인이 되다, 책임지고 결정하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "正当",
+    "pinyin": "zhèngdàng / zhèngdāng",
+    "rawMeaning": "정당하다 / 마침 ~한 시기이다",
+    "pos": [
+      "형용사",
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "정당하다"
+      },
+      {
+        "pos": "동사",
+        "meaning": "마침 ~한 시기이다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "处境",
+    "pinyin": "chǔjìng",
+    "rawMeaning": "(처해 있는) 처지, 환경[주로 불리한 상황]",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(처해 있는) 처지, 환경[주로 불리한 상황]"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "危机",
+    "pinyin": "wēijī",
+    "rawMeaning": "위기, 위험한 고비",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "위기, 위험한 고비"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "过失",
+    "pinyin": "guòshī",
+    "rawMeaning": "과오, 과실",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "과오, 과실"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "陷阱",
+    "pinyin": "xiànjǐng",
+    "rawMeaning": "함정, 속임수",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "함정, 속임수"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "周折",
+    "pinyin": "zhōuzhé",
+    "rawMeaning": "우여곡절, 고심",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "우여곡절, 고심"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "隐瞒",
+    "pinyin": "yǐnmán",
+    "rawMeaning": "(진상을) 숨기다, 속이다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(진상을) 숨기다, 속이다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "辜负",
+    "pinyin": "gūfù",
+    "rawMeaning": "(호의, 기대, 도움 등을) 저버리다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(호의, 기대, 도움 등을) 저버리다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "挥霍",
+    "pinyin": "huīhuò",
+    "rawMeaning": "헤프게 쓰다, 물 쓰듯 하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "헤프게 쓰다, 물 쓰듯 하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "活该",
+    "pinyin": "huógāi",
+    "rawMeaning": "~해도 싸다, ~한 것은 당연하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "~해도 싸다, ~한 것은 당연하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "忌讳",
+    "pinyin": "jìhuì",
+    "rawMeaning": "(말이나 행동을) 금기하다, 꺼리다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(말이나 행동을) 금기하다, 꺼리다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "检讨",
+    "pinyin": "jiǎntǎo",
+    "rawMeaning": "깊이 반성하다, 검토하다 / 반성문",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "깊이 반성하다, 검토하다"
+      },
+      {
+        "pos": "명사",
+        "meaning": "반성문"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "纠正",
+    "pinyin": "jiūzhèng",
+    "rawMeaning": "(사상, 잘못을) 바로잡다, 교정하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(사상, 잘못을) 바로잡다, 교정하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "抛弃",
+    "pinyin": "pāoqì",
+    "rawMeaning": "버리다, 포기하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "버리다, 포기하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "受罪",
+    "pinyin": "shòuzuì",
+    "rawMeaning": "고난을 당하다, 고생하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "고난을 당하다, 고생하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "尚且",
+    "pinyin": "shàngqiě",
+    "rawMeaning": "~조차 ~한데",
+    "pos": [
+      "접속사"
+    ],
+    "meanings": [
+      {
+        "pos": "접속사",
+        "meaning": "~조차 ~한데"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "考古",
+    "pinyin": "kǎogǔ",
+    "rawMeaning": "고고학 / 고고학을 연구하다",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "고고학"
+      },
+      {
+        "pos": "동사",
+        "meaning": "고고학을 연구하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "渠道",
+    "pinyin": "qúdào",
+    "rawMeaning": "경로, 관개 수로",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "경로, 관개 수로"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "心得",
+    "pinyin": "xīndé",
+    "rawMeaning": "소감, 느낌",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "소감, 느낌"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "请教",
+    "pinyin": "qǐngjiào",
+    "rawMeaning": "가르침을 청하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "가르침을 청하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "中断",
+    "pinyin": "zhōngduàn",
+    "rawMeaning": "중단하다, 중단되다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "중단하다, 중단되다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "引导",
+    "pinyin": "yǐndǎo",
+    "rawMeaning": "이끌다, 인도하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "이끌다, 인도하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "特定",
+    "pinyin": "tèdìng",
+    "rawMeaning": "특정한, 일정한",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "특정한, 일정한"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "尝试",
+    "pinyin": "chángshì",
+    "rawMeaning": "시도해 보다, 테스트해 보다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "시도해 보다, 테스트해 보다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "精通",
+    "pinyin": "jīngtōng",
+    "rawMeaning": "통달하다, 정통하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "통달하다, 정통하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "钻研",
+    "pinyin": "zuānyán",
+    "rawMeaning": "깊이 연구하다, 몰두하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "깊이 연구하다, 몰두하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "细致",
+    "pinyin": "xìzhì",
+    "rawMeaning": "세밀하다, 정교하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "세밀하다, 정교하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "进而",
+    "pinyin": "jìn'ér",
+    "rawMeaning": "더 나아가, 진일보하여",
+    "pos": [
+      "접속사"
+    ],
+    "meanings": [
+      {
+        "pos": "접속사",
+        "meaning": "더 나아가, 진일보하여"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "以致",
+    "pinyin": "yǐzhì",
+    "rawMeaning": "~이 되다, ~을 초래하다",
+    "pos": [
+      "접속사"
+    ],
+    "meanings": [
+      {
+        "pos": "접속사",
+        "meaning": "~이 되다, ~을 초래하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "要点",
+    "pinyin": "yàodiǎn",
+    "rawMeaning": "요점",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "요점"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "公式",
+    "pinyin": "gōngshì",
+    "rawMeaning": "공식",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "공식"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "谜语",
+    "pinyin": "míyǔ",
+    "rawMeaning": "수수께끼",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "수수께끼"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "运算",
+    "pinyin": "yùnsuàn",
+    "rawMeaning": "연산하다, 운산하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "연산하다, 운산하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "注释",
+    "pinyin": "zhùshì",
+    "rawMeaning": "주해하다, 주석하다 / 주석, 주해",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "주해하다, 주석하다"
+      },
+      {
+        "pos": "명사",
+        "meaning": "주석, 주해"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "科目",
+    "pinyin": "kēmù",
+    "rawMeaning": "과목",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "과목"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "母语",
+    "pinyin": "mǔyǔ",
+    "rawMeaning": "모국어",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "모국어"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "对照",
+    "pinyin": "duìzhào",
+    "rawMeaning": "대조하다, 비교하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "대조하다, 비교하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "重叠",
+    "pinyin": "chóngdié",
+    "rawMeaning": "겹치다, 중첩하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "겹치다, 중첩하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "答辩",
+    "pinyin": "dábiàn",
+    "rawMeaning": "답변하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "답변하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "答复",
+    "pinyin": "dáfù",
+    "rawMeaning": "(요구나 질문에 대해) 답변하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(요구나 질문에 대해) 답변하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "文凭",
+    "pinyin": "wénpíng",
+    "rawMeaning": "졸업 증서",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "졸업 증서"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "学位",
+    "pinyin": "xuéwèi",
+    "rawMeaning": "(학사, 석사, 박사 등의) 학위",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(학사, 석사, 박사 등의) 학위"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "证书",
+    "pinyin": "zhèngshū",
+    "rawMeaning": "증서, 증명서",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "증서, 증명서"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "授予",
+    "pinyin": "shòuyǔ",
+    "rawMeaning": "(상장, 명예, 학위 등을) 수여하다, 주다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(상장, 명예, 학위 등을) 수여하다, 주다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "正规",
+    "pinyin": "zhèngguī",
+    "rawMeaning": "정규의, 표준의",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "정규의, 표준의"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "智商",
+    "pinyin": "zhìshāng",
+    "rawMeaning": "지능 지수, IQ",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "지능 지수, IQ"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "趣味",
+    "pinyin": "qùwèi",
+    "rawMeaning": "재미, 흥미",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "재미, 흥미"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "本事",
+    "pinyin": "běnshi",
+    "rawMeaning": "능력, 재능, 기량",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "능력, 재능, 기량"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "记性",
+    "pinyin": "jìxing",
+    "rawMeaning": "기억력",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "기억력"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "专长",
+    "pinyin": "zhuāncháng",
+    "rawMeaning": "특기, 전문 기술",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "특기, 전문 기술"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "开拓",
+    "pinyin": "kāituò",
+    "rawMeaning": "넓히다, 개척하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "넓히다, 개척하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "指望",
+    "pinyin": "zhǐwàng",
+    "rawMeaning": "바라다, 기대하다 / 기대, 희망",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "바라다, 기대하다"
+      },
+      {
+        "pos": "명사",
+        "meaning": "기대, 희망"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "无比",
+    "pinyin": "wúbǐ",
+    "rawMeaning": "더 비할 바가 없다, 아주 뛰어나다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "더 비할 바가 없다, 아주 뛰어나다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "巩固",
+    "pinyin": "gǒnggù",
+    "rawMeaning": "튼튼하다, 공고하다 / 견고하게 하다, 공고히 하다",
+    "pos": [
+      "형용사",
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "튼튼하다, 공고하다"
+      },
+      {
+        "pos": "동사",
+        "meaning": "견고하게 하다, 공고히 하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "扎实",
+    "pinyin": "zhāshi",
+    "rawMeaning": "(학문, 일 따위의 기초가) 탄탄하다, (사물이) 견고하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "(학문, 일 따위의 기초가) 탄탄하다, (사물이) 견고하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "包袱",
+    "pinyin": "bāofu",
+    "rawMeaning": "짐, 부담, (보자기로 싼) 보따리",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "짐, 부담, (보자기로 싼) 보따리"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "吃苦",
+    "pinyin": "chīkǔ",
+    "rawMeaning": "고생하다, 고통을 맛보다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "고생하다, 고통을 맛보다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "敷衍",
+    "pinyin": "fūyǎn",
+    "rawMeaning": "(일 처리나 남을 대하는 것을) 대충하다, 적당히 얼버무리다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(일 처리나 남을 대하는 것을) 대충하다, 적당히 얼버무리다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "旷课",
+    "pinyin": "kuàngkè",
+    "rawMeaning": "(학생이) 무단 결석하다, 수업을 빼먹다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(학생이) 무단 결석하다, 수업을 빼먹다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "例外",
+    "pinyin": "lìwài",
+    "rawMeaning": "예외로 하다 / 예외, 예외적인 상황",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "예외로 하다"
+      },
+      {
+        "pos": "명사",
+        "meaning": "예외, 예외적인 상황"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "停滞",
+    "pinyin": "tíngzhì",
+    "rawMeaning": "정체되다, 막히다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "정체되다, 막히다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "吃力",
+    "pinyin": "chīlì",
+    "rawMeaning": "힘들다, 고달프다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "힘들다, 고달프다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "仓促",
+    "pinyin": "cāngcù",
+    "rawMeaning": "촉박하다, 황급하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "촉박하다, 황급하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "贫乏",
+    "pinyin": "pínfá",
+    "rawMeaning": "부족하다, 빈궁하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "부족하다, 빈궁하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "师范",
+    "pinyin": "shīfàn",
+    "rawMeaning": "사범 학교, 본보기, 모범",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "사범 학교, 본보기, 모범"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "示范",
+    "pinyin": "shìfàn",
+    "rawMeaning": "시범하다, 모범을 보이다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "시범하다, 모범을 보이다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "附属",
+    "pinyin": "fùshǔ",
+    "rawMeaning": "부속되다, 귀속되다 / 부속의, 부설의",
+    "pos": [
+      "동사",
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "부속되다, 귀속되다"
+      },
+      {
+        "pos": "형용사",
+        "meaning": "부속의, 부설의"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "模范",
+    "pinyin": "mófàn",
+    "rawMeaning": "모범적인, 모범이 되는 / 모범",
+    "pos": [
+      "형용사",
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "모범적인, 모범이 되는"
+      },
+      {
+        "pos": "명사",
+        "meaning": "모범"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "前提",
+    "pinyin": "qiántí",
+    "rawMeaning": "전제, 전제 조건",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "전제, 전제 조건"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "徒弟",
+    "pinyin": "túdì",
+    "rawMeaning": "제자",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "제자"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "勉励",
+    "pinyin": "miǎnlì",
+    "rawMeaning": "격려하다, 고무하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "격려하다, 고무하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "鞭策",
+    "pinyin": "biāncè",
+    "rawMeaning": "채찍질하다, 독려하고 재촉하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "채찍질하다, 독려하고 재촉하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "督促",
+    "pinyin": "dūcù",
+    "rawMeaning": "독촉하다, 재촉하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "독촉하다, 재촉하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "告诫",
+    "pinyin": "gàojiè",
+    "rawMeaning": "훈계하다, 타이르다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "훈계하다, 타이르다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "熏陶",
+    "pinyin": "xūntáo",
+    "rawMeaning": "영향을 끼치다, 훈도하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "영향을 끼치다, 훈도하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "挨",
+    "pinyin": "ái",
+    "rawMeaning": "~을 받다, ~을 당하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "~을 받다, ~을 당하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "强迫",
+    "pinyin": "qiǎngpò",
+    "rawMeaning": "강요하다, 강제로 시키다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "강요하다, 강제로 시키다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "逼迫",
+    "pinyin": "bīpò",
+    "rawMeaning": "강요하다, 핍박하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "강요하다, 핍박하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "严厉",
+    "pinyin": "yánlì",
+    "rawMeaning": "엄하다, 호되다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "엄하다, 호되다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "迁就",
+    "pinyin": "qiānjiù",
+    "rawMeaning": "끌려가다, 타협하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "끌려가다, 타협하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "伤脑筋",
+    "pinyin": "shāng nǎojīn",
+    "rawMeaning": "골치를 앓다, 애를 먹다",
+    "pos": [
+      "."
+    ],
+    "meanings": [
+      {
+        "pos": ".",
+        "meaning": "골치를 앓다, 애를 먹다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "派别",
+    "pinyin": "pàibié",
+    "rawMeaning": "(학술, 종교, 정당 등의) 파, 파벌",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(학술, 종교, 정당 등의) 파, 파벌"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "儒家",
+    "pinyin": "Rújiā",
+    "rawMeaning": "유가",
+    "pos": [
+      "고유명사"
+    ],
+    "meanings": [
+      {
+        "pos": "고유명사",
+        "meaning": "유가"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "专题",
+    "pinyin": "zhuāntí",
+    "rawMeaning": "특정한 제목, 전문적인 테마",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "특정한 제목, 전문적인 테마"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "启蒙",
+    "pinyin": "qǐméng",
+    "rawMeaning": "기초 지식을 전수하다, 계몽하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "기초 지식을 전수하다, 계몽하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "涉及",
+    "pinyin": "shèjí",
+    "rawMeaning": "다루다, 관련되다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "다루다, 관련되다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "提示",
+    "pinyin": "tíshì",
+    "rawMeaning": "일러주다, 힌트를 주다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "일러주다, 힌트를 주다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "草案",
+    "pinyin": "cǎo'àn",
+    "rawMeaning": "초안",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "초안"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "论坛",
+    "pinyin": "lùntán",
+    "rawMeaning": "포럼, 논단, 칼럼",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "포럼, 논단, 칼럼"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "条理",
+    "pinyin": "tiáolǐ",
+    "rawMeaning": "(생각, 말, 글 등의) 조리, 맥락",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(생각, 말, 글 등의) 조리, 맥락"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "真理",
+    "pinyin": "zhēnlǐ",
+    "rawMeaning": "진리",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "진리"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "阐述",
+    "pinyin": "chǎnshù",
+    "rawMeaning": "상세히 논술하다, 명백하게 논술하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "상세히 논술하다, 명백하게 논술하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "比方",
+    "pinyin": "bǐfang",
+    "rawMeaning": "예를 들다, 비유하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "예를 들다, 비유하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "动手",
+    "pinyin": "dòngshǒu",
+    "rawMeaning": "착수하다, (~하기) 시작하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "착수하다, (~하기) 시작하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "论证",
+    "pinyin": "lùnzhèng",
+    "rawMeaning": "논증하다 / 논거",
+    "pos": [
+      "동사",
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "논증하다"
+      },
+      {
+        "pos": "명사",
+        "meaning": "논거"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "先前",
+    "pinyin": "xiānqián",
+    "rawMeaning": "예전, 이전",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "예전, 이전"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "昔日",
+    "pinyin": "xīrì",
+    "rawMeaning": "옛날, 지난날",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "옛날, 지난날"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "当代",
+    "pinyin": "dāngdài",
+    "rawMeaning": "당대, 그 시대",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "당대, 그 시대"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "近来",
+    "pinyin": "jìnlái",
+    "rawMeaning": "근래, 요즘",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "근래, 요즘"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "间隔",
+    "pinyin": "jiàngé",
+    "rawMeaning": "(시간, 공간의) 간격, 사이 / 간격을 두다, 띄우다",
+    "pos": [
+      "명사",
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(시간, 공간의) 간격, 사이"
+      },
+      {
+        "pos": "동사",
+        "meaning": "간격을 두다, 띄우다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "历代",
+    "pinyin": "lìdài",
+    "rawMeaning": "역대",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "역대"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "世代",
+    "pinyin": "shìdài",
+    "rawMeaning": "대대, 세대",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "대대, 세대"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "朝代",
+    "pinyin": "cháodài",
+    "rawMeaning": "왕조, 시대",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "왕조, 시대"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "凌晨",
+    "pinyin": "língchén",
+    "rawMeaning": "새벽, 동틀 무렵",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "새벽, 동틀 무렵"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "清晨",
+    "pinyin": "qīngchén",
+    "rawMeaning": "새벽녘, 일출 전후의 시간",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "새벽녘, 일출 전후의 시간"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "黎明",
+    "pinyin": "límíng",
+    "rawMeaning": "동틀 무렵, 여명",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "동틀 무렵, 여명"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "昼夜",
+    "pinyin": "zhòuyè",
+    "rawMeaning": "낮과 밤",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "낮과 밤"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "成天",
+    "pinyin": "chéngtiān",
+    "rawMeaning": "하루 종일, 온종일",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "하루 종일, 온종일"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "黄昏",
+    "pinyin": "huánghūn",
+    "rawMeaning": "해질 무렵, 황혼",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "해질 무렵, 황혼"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "农历",
+    "pinyin": "nónglì",
+    "rawMeaning": "음력, 농사력",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "음력, 농사력"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "正月",
+    "pinyin": "zhēngyuè",
+    "rawMeaning": "정월",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "정월"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "端午节",
+    "pinyin": "Duānwǔ Jié",
+    "rawMeaning": "단오절",
+    "pos": [
+      "고유명사"
+    ],
+    "meanings": [
+      {
+        "pos": "고유명사",
+        "meaning": "단오절"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "元宵节",
+    "pinyin": "Yuánxiāo Jié",
+    "rawMeaning": "원소절, 정월 대보름",
+    "pos": [
+      "고유명사"
+    ],
+    "meanings": [
+      {
+        "pos": "고유명사",
+        "meaning": "원소절, 정월 대보름"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "时机",
+    "pinyin": "shíjī",
+    "rawMeaning": "시기, 기회",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "시기, 기회"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "岁月",
+    "pinyin": "suìyuè",
+    "rawMeaning": "세월",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "세월"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "人间",
+    "pinyin": "rénjiān",
+    "rawMeaning": "(인간) 세상, (인간) 사회",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(인간) 세상, (인간) 사회"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "时光",
+    "pinyin": "shíguāng",
+    "rawMeaning": "세월, 시기, 시절",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "세월, 시기, 시절"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "之际",
+    "pinyin": "zhījì",
+    "rawMeaning": "(일이 발생한) 즈음, 때",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(일이 발생한) 즈음, 때"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "周年",
+    "pinyin": "zhōunián",
+    "rawMeaning": "주년",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "주년"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "逢",
+    "pinyin": "féng",
+    "rawMeaning": "만나다, 마주치다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "만나다, 마주치다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "降临",
+    "pinyin": "jiànglín",
+    "rawMeaning": "도래하다, 일어나다, 들이닥치다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "도래하다, 일어나다, 들이닥치다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "为期",
+    "pinyin": "wéiqī",
+    "rawMeaning": "(~을) 기한으로 하다, 약속 날짜로 삼다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(~을) 기한으로 하다, 약속 날짜로 삼다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "俗话",
+    "pinyin": "súhuà",
+    "rawMeaning": "속담, 옛말",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "속담, 옛말"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "习俗",
+    "pinyin": "xísú",
+    "rawMeaning": "풍습, 풍속",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "풍습, 풍속"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "灯笼",
+    "pinyin": "dēnglong",
+    "rawMeaning": "등롱, 초롱",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "등롱, 초롱"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "气功",
+    "pinyin": "qìgōng",
+    "rawMeaning": "(무술의 일종인) 기공",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(무술의 일종인) 기공"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "生肖",
+    "pinyin": "shēngxiào",
+    "rawMeaning": "(사람의) 띠",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(사람의) 띠"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "传授",
+    "pinyin": "chuánshòu",
+    "rawMeaning": "(학문, 기예 등을 다른 사람에게) 전수하다, 가르치다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(학문, 기예 등을 다른 사람에게) 전수하다, 가르치다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "光荣",
+    "pinyin": "guāngróng",
+    "rawMeaning": "영광스럽다, 영예롭다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "영광스럽다, 영예롭다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "悬殊",
+    "pinyin": "xuánshū",
+    "rawMeaning": "차이가 매우 크다, 현격하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "차이가 매우 크다, 현격하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "不止",
+    "pinyin": "bùzhǐ",
+    "rawMeaning": "~에 그치지 않다, ~를 넘다 / 그치지 않다, 멈추지 않다",
+    "pos": [
+      "부사",
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "부사",
+        "meaning": "~에 그치지 않다, ~를 넘다"
+      },
+      {
+        "pos": "동사",
+        "meaning": "그치지 않다, 멈추지 않다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "迎面",
+    "pinyin": "yíngmiàn",
+    "rawMeaning": "정면으로",
+    "pos": [
+      "부사"
+    ],
+    "meanings": [
+      {
+        "pos": "부사",
+        "meaning": "정면으로"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "次序",
+    "pinyin": "cìxù",
+    "rawMeaning": "(시간, 공간에서의) 차례, 순서",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(시간, 공간에서의) 차례, 순서"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "博览会",
+    "pinyin": "bólǎnhuì",
+    "rawMeaning": "박람회",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "박람회"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "典礼",
+    "pinyin": "diǎnlǐ",
+    "rawMeaning": "(성대한) 식, 의식",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "(성대한) 식, 의식"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "仪式",
+    "pinyin": "yíshì",
+    "rawMeaning": "의식",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "의식"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "承办",
+    "pinyin": "chéngbàn",
+    "rawMeaning": "맡아 처리하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "맡아 처리하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "主办",
+    "pinyin": "zhǔbàn",
+    "rawMeaning": "주최하다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "주최하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "应邀",
+    "pinyin": "yìngyāo",
+    "rawMeaning": "초청에 응하다, 초청을 받아들이다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "초청에 응하다, 초청을 받아들이다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "隆重",
+    "pinyin": "lóngzhòng",
+    "rawMeaning": "성대하다, 장중하다",
+    "pos": [
+      "형용사"
+    ],
+    "meanings": [
+      {
+        "pos": "형용사",
+        "meaning": "성대하다, 장중하다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "剪彩",
+    "pinyin": "jiǎncǎi",
+    "rawMeaning": "(개막, 준공, 개업 등의 식전에서) 기념 테이프를 끊다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(개막, 준공, 개업 등의 식전에서) 기념 테이프를 끊다"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "旗帜",
+    "pinyin": "qízhì",
+    "rawMeaning": "깃발, 본보기",
+    "pos": [
+      "명사"
+    ],
+    "meanings": [
+      {
+        "pos": "명사",
+        "meaning": "깃발, 본보기"
+      }
+    ]
+  },
+  {
+    "level": "6급",
+    "hanzi": "飘扬",
+    "pinyin": "piāoyáng",
+    "rawMeaning": "(바람에) 펄럭이다, 휘날리다, 나부끼다",
+    "pos": [
+      "동사"
+    ],
+    "meanings": [
+      {
+        "pos": "동사",
+        "meaning": "(바람에) 펄럭이다, 휘날리다, 나부끼다"
+      }
+    ]
   }
 ];
